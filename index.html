@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUI massage - 結 | 筋膜リリースの新感覚</title>
+    <meta name="description" content="YUI massageは18年の高級スパ経験を持つ健康と美容の専門サロンです。沖縄県北谷町砂辺にございます。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>YUI massage</h1>
+                <span class="kanji">結</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                <li><a href="#services" class="nav-link" data-ja="サービス" data-en="Services">サービス</a></li>
+                <li><a href="#about" class="nav-link" data-ja="私たちについて" data-en="About">私たちについて</a></li>
+                <li><a href="#contact" class="nav-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="language-toggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-indicator">EN</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>YUI massage <span class="kanji-large">結</span></h1>
+                <p class="slogan" data-ja="筋膜リリースの新感覚" data-en="A New Sensation for Myofascial Release">筋膜リリースの新感覚</p>
+                <p class="hero-description" data-ja="18年の高級スパ経験で培った専門技術により、癒しとウェルネスの絆を体験してください。" data-en="Experience the bond between healing and wellness with our specialized treatments, crafted with 18 years of luxury spa expertise.">18年の高級スパ経験で培った専門技術により、癒しとウェルネスの絆を体験してください。</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openChat()" data-ja="今すぐ予約" data-en="Book Now">今すぐ予約</button>
+                    <a href="#services" class="btn-secondary" data-ja="サービスを見る" data-en="View Services">サービスを見る</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./image/home.jpg" alt="リラックスできるスパ環境">
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4 data-ja="営業時間" data-en="Business Hours">営業時間</h4>
+                        <p>10:00 - 21:00</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4 data-ja="ご予約" data-en="Reservations">ご予約</h4>
+                        <p>070-5537-7858</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4 data-ja="所在地" data-en="Location">所在地</h4>
+                        <p data-ja="北谷町砂辺" data-en="Chatan, Sunabe">北谷町砂辺</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <h4 data-ja="経験年数" data-en="Experience">経験年数</h4>
+                        <p data-ja="18年認定" data-en="18 Years Certified">18年認定</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ja="サービスメニュー" data-en="Our Services">サービスメニュー</h2>
+                <p data-ja="あなたのウェルネスジャーニーのために設計された専門トリートメントからお選びください" data-en="Choose from our specialized treatments designed for your wellness journey">あなたのウェルネスジャーニーのために設計された専門トリートメントからお選びください</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service A -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./image/Rakulease_body.jpg" alt="ラクリーズボディトリートメント">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-ja="A: ラクリーズボディトリートメント" data-en="A: Rakulease Body Treatment">A: ラクリーズボディトリートメント</h3>
+                        <p data-ja="低周波電気刺激で深部筋肉をリラックス。首・肩、上半身、脚、腕、お腹、デコルテから3箇所をお選びください。" data-en="Low-frequency electrical stimulation to relax deep muscles. Choose 3 areas from neck & shoulder, upper body, legs, arms, stomach, or décolleté.">低周波電気刺激で深部筋肉をリラックス。首・肩、上半身、脚、腕、お腹、デコルテから3箇所をお選びください。</p>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="duration">90分</span>
+                                <span class="price">¥12,000</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="duration">60分</span>
+                                <span class="price">¥9,000</span>
+                            </div>
+                        </div>
+                        <div class="service-notes">
+                            <p><small data-ja="男性の方は+¥1,000 | 2回目以降：¥5,000" data-en="+¥1,000 for men | Subsequent visits: ¥5,000">男性の方は+¥1,000 | 2回目以降：¥5,000</small></p>
+                        </div>
+                        <button class="btn-service" onclick="openChat()" data-ja="トリートメント予約" data-en="Book Treatment">トリートメント予約</button>
+                    </div>
+                </div>
+
+                <!-- Service B -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./image/body_oil.jpg" alt="オイルボディトリートメント">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-ja="B: オイルボディトリートメント" data-en="B: Oil Body Treatment">B: オイルボディトリートメント</h3>
+                        <p data-ja="アジアの植物オイルでリンパの流れを改善し、筋肉をリラックス。全身リラクゼーション体験。" data-en="Asian plant oils to improve lymphatic flow and relax muscles. Full body relaxation experience.">アジアの植物オイルでリンパの流れを改善し、筋肉をリラックス。全身リラクゼーション体験。</p>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="duration">120分</span>
+                                <span class="price">¥15,000</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="duration">90分</span>
+                                <span class="price">¥12,000</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="duration">60分</span>
+                                <span class="price">¥9,000</span>
+                            </div>
+                        </div>
+                        <div class="service-notes">
+                            <p><small data-ja="男性の方は+¥1,000" data-en="+¥1,000 for men">男性の方は+¥1,000</small></p>
+                        </div>
+                        <button class="btn-service" onclick="openChat()" data-ja="トリートメント予約" data-en="Book Treatment">トリートメント予約</button>
+                    </div>
+                </div>
+
+                <!-- Service C -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./image/Rakulease_face.jpg" alt="ラクリーズフェイシャルトリートメント">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-ja="C: ラクリーズフェイシャルトリートメント" data-en="C: Rakulease Facial Treatment">C: ラクリーズフェイシャルトリートメント</h3>
+                        <p data-ja="眼精疲労を和らげ、フェイスラインをシャープに。クレンジングと専門トリートメントを含みます。" data-en="Relieves eye strain and sharpens facial contours. Includes cleansing and specialized treatments.">眼精疲労を和らげ、フェイスラインをシャープに。クレンジングと専門トリートメントを含みます。</p>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="duration">70分</span>
+                                <span class="price">¥10,000</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="duration">30分</span>
+                                <span class="price">¥5,000</span>
+                            </div>
+                        </div>
+                        <div class="service-notes">
+                            <p><small data-ja="70分：ヘッド、フェイス、お腹、ナタデココパック含む" data-en="70min: Includes head, face, stomach & Nata de coco pack">70分：ヘッド、フェイス、お腹、ナタデココパック含む</small></p>
+                            <p><small data-ja="30分：他のサービスとの組み合わせのみ" data-en="30min: Combination with other services only">30分：他のサービスとの組み合わせのみ</small></p>
+                        </div>
+                        <button class="btn-service" onclick="openChat()" data-ja="トリートメント予約" data-en="Book Treatment">トリートメント予約</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 data-ja="YUI massageについて" data-en="About YUI massage">YUI massageについて</h2>
+                        <p data-ja="癒しとウェルネスの絆" data-en="The bond between healing and wellness">癒しとウェルネスの絆</p>
+                    </div>
+                    <div class="about-story">
+                        <p data-ja="YUI massageは健康と美容のトリートメントを専門とし、恩納村の高級スパで18年の経験を持つ元セラピストによって設立されました。国家資格を持つ私たちのアプローチは、伝統的な技術と現代のウェルネス実践を組み合わせています。" data-en="YUI massage specializes in health and beauty treatments, founded by a former therapist with 18 years of experience at a luxury spa in Onna Village. Our nationally certified approach combines traditional techniques with modern wellness practices.">YUI massageは健康と美容のトリートメントを専門とし、恩納村の高級スパで18年の経験を持つ元セラピストによって設立されました。国家資格を持つ私たちのアプローチは、伝統的な技術と現代のウェルネス実践を組み合わせています。</p>
+                        
+                        <p data-ja="「YUI」（結）という名前は、ある朝、創設者に突然のインスピレーションとして浮かびました。沖縄の方言では「人と人との絆」を意味し、私たちの癒しとウェルネスへのアプローチを定義する核となる価値観です。" data-en="The name 'YUI' (結) came to our founder in a sudden moment of inspiration one morning. In the Okinawan dialect, it means 'the bond between people' - a core value that defines our approach to healing and wellness.">「YUI」（結）という名前は、ある朝、創設者に突然のインスピレーションとして浮かびました。沖縄の方言では「人と人との絆」を意味し、私たちの癒しとウェルネスへのアプローチを定義する核となる価値観です。</p>
+                        
+                        <div class="credentials">
+                            <div class="credential-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4 data-ja="国家資格認定" data-en="Nationally Certified">国家資格認定</h4>
+                                    <p data-ja="専門的な認定と訓練" data-en="Professional certification and training">専門的な認定と訓練</p>
+                                </div>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-spa"></i>
+                                <div>
+                                    <h4 data-ja="18年の経験" data-en="18 Years Experience">18年の経験</h4>
+                                    <p data-ja="元高級スパセラピスト" data-en="Former luxury spa therapist">元高級スパセラピスト</p>
+                                </div>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h4 data-ja="健康と美容に特化" data-en="Health & Beauty Focus">健康と美容に特化</h4>
+                                    <p data-ja="専門的なウェルネストリートメント" data-en="Specialized wellness treatments">専門的なウェルネストリートメント</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./image/about.jpg" alt="プロフェッショナルマッサージセラピー">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="policies">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ja="ポリシーとサービス" data-en="Policies & Services">ポリシーとサービス</h2>
+            </div>
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <i class="fas fa-calendar-times"></i>
+                    <h4 data-ja="キャンセルポリシー" data-en="Cancellation Policy">キャンセルポリシー</h4>
+                    <p data-ja="24時間前以降のキャンセルは全額料金が発生します" data-en="Full charge applies for cancellations made less than 24 hours in advance">24時間前以降のキャンセルは全額料金が発生します</p>
+                </div>
+                <div class="policy-card">
+                    <i class="fas fa-moon"></i>
+                    <h4 data-ja="夜間予約" data-en="Evening Appointments">夜間予約</h4>
+                    <p data-ja="20時以降のご予約も承ります" data-en="Accepting reservations after 8 PM">20時以降のご予約も承ります</p>
+                </div>
+                <div class="policy-card">
+                    <i class="fas fa-clock"></i>
+                    <h4 data-ja="当日予約" data-en="Same-Day Bookings">当日予約</h4>
+                    <p data-ja="当日のご予約も承ります" data-en="Same-day reservations accepted">当日のご予約も承ります</p>
+                </div>
+                <div class="policy-card">
+                    <i class="fas fa-lock"></i>
+                    <h4 data-ja="個室完備" data-en="Private Rooms">個室完備</h4>
+                    <p data-ja="プライベートトリートメントルームをご用意" data-en="Private treatment rooms available">プライベートトリートメントルームをご用意</p>
+                </div>
+                <div class="policy-card">
+                    <i class="fas fa-car"></i>
+                    <h4 data-ja="駐車場完備" data-en="Parking Available">駐車場完備</h4>
+                    <p data-ja="お客様専用駐車場をご用意" data-en="Convenient parking for all clients">お客様専用駐車場をご用意</p>
+                </div>
+                <div class="policy-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h4 data-ja="お支払い方法" data-en="Payment Options">お支払い方法</h4>
+                    <p data-ja="クレジットカード決済対応" data-en="Credit card payments accepted">クレジットカード決済対応</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ja="お問い合わせ・アクセス" data-en="Contact & Location">お問い合わせ・アクセス</h2>
+                <p data-ja="北谷町砂辺の中心部にお越しください" data-en="Visit us in the heart of Chatan, Sunabe">北谷町砂辺の中心部にお越しください</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-ja="住所" data-en="Address">住所</h4>
+                            <p>沖縄県中頭郡北谷町浜川２１８ー２<br>クレリア砂辺２０１</p>
+                            <p><strong data-ja="北谷町砂辺、嘉手納ゲート1" data-en="Chatan, Sunabe, Kadena Gate 1">北谷町砂辺、嘉手納ゲート1</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-ja="電話番号" data-en="Phone">電話番号</h4>
+                            <p><a href="tel:070-5537-7858">070-5537-7858</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-ja="営業時間" data-en="Business Hours">営業時間</h4>
+                            <p>10:00 - 21:00</p>
+                            <p><small data-ja="最終受付：21:00" data-en="Last appointment: 21:00">最終受付：21:00</small></p>
+                            <p><small data-ja="定休日あり" data-en="Closed on regular holidays">定休日あり</small></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h4 data-ja="ご予約について" data-en="Reservations">ご予約について</h4>
+                            <p data-ja="完全予約制" data-en="Reservations only">完全予約制</p>
+                            <p data-ja="女性スタッフ在籍" data-en="Female staff available">女性スタッフ在籍</p>
+                            <p data-ja="ドリンクサービス付き" data-en="Drink service included">ドリンクサービス付き</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3 data-ja="YUI massageを体験してみませんか？" data-en="Ready to Experience YUI massage?">YUI massageを体験してみませんか？</h3>
+                        <p data-ja="今すぐご予約いただき、筋膜リリースの新感覚を発見してください。" data-en="Book your appointment today and discover the new sensation of myofascial release.">今すぐご予約いただき、筋膜リリースの新感覚を発見してください。</p>
+                        <button class="btn-primary btn-large" onclick="openChat()">
+                            <i class="fas fa-comments"></i>
+                            <span data-ja="ご予約はこちら" data-en="Book Your Appointment">ご予約はこちら</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>YUI massage <span class="kanji">結</span></h3>
+                    <p data-ja="筋膜リリースの新感覚" data-en="A New Sensation for Myofascial Release">筋膜リリースの新感覚</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> 070-5537-7858</p>
+                    <p><i class="fas fa-clock"></i> 10:00 - 21:00</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-ja="沖縄県北谷町砂辺" data-en="Chatan, Sunabe, Okinawa">沖縄県北谷町砂辺</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YUI massage. <span data-ja="All rights reserved." data-en="All rights reserved.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget Placeholder -->
+    <div id="chat-widget">
+        <!-- Your n8n chat widget will be inserted here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

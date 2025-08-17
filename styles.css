@@ -658,9 +658,26 @@ p {
     
     .nav-actions {
         position: absolute;
-        right: 60px;
+        right: 20px;
         top: 50%;
         transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .language-toggle {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+        gap: 4px;
+    }
+    
+    .language-toggle i {
+        font-size: 0.9rem;
+    }
+    
+    #lang-indicator {
+        font-size: 0.7rem;
     }
     
     .nav-menu.active {
@@ -727,7 +744,25 @@ p {
     
     .hero-buttons {
         flex-direction: column;
-        align-items: center;
+    }
+    
+    .nav-actions {
+        right: 15px;
+        gap: 0.5rem;
+    }
+    
+    .language-toggle {
+        padding: 5px 6px;
+        font-size: 0.75rem;
+        gap: 3px;
+    }
+    
+    .language-toggle i {
+        font-size: 0.8rem;
+    }
+    
+    #lang-indicator {
+        font-size: 0.65rem;
     }
     
     .btn-primary, .btn-secondary {

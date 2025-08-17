@@ -39,6 +39,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background"></div>
         <div class="hero-content">
             <div class="hero-text">
                 <h1>YUI massage <span class="kanji-large">結</span></h1>
@@ -49,9 +50,6 @@
                     <a href="#services" class="btn-secondary" data-ja="サービスを見る" data-en="View Services">サービスを見る</a>
                 </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="./image/home.jpg" alt="リラックスできるスパ環境">
         </div>
     </section>
 
@@ -283,7 +281,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4 data-ja="住所" data-en="Address">住所</h4>
-                            <p>沖縄県中頭郡北谷町浜川２１８ー２<br>クレリア砂辺２０１</p>
+                            <p><a href="https://maps.google.com/?q=沖縄県中頭郡北谷町浜川２１８ー２　クレリア砂辺２０１" target="_blank" class="map-link">沖縄県中頭郡北谷町浜川２１８ー２<br>クレリア砂辺２０１</a></p>
                             <p><strong data-ja="北谷町砂辺、嘉手納ゲート1" data-en="Chatan, Sunabe, Kadena Gate 1">北谷町砂辺、嘉手納ゲート1</strong></p>
                         </div>
                     </div>
@@ -327,6 +325,51 @@
         </div>
     </section>
 
+    <!-- QR Code Section for Reservations -->
+    <div id="qr-section" class="qr-section">
+        <div class="container">
+            <div class="qr-content">
+                <h3 data-ja="ご予約はこちら" data-en="Make Your Reservation">ご予約はこちら</h3>
+                <p data-ja="InstagramまたはLINEでお気軽にお問い合わせください" data-en="Contact us easily via Instagram or LINE">InstagramまたはLINEでお気軽にお問い合わせください</p>
+                
+                <div class="qr-codes">
+                    <div class="qr-code-item">
+                        <div class="qr-code">
+                            <div class="qr-code-display instagram-qr">
+                                <img src="./image/insta_qr.jpg" alt="Instagram QR Code" class="qr-image">
+                            </div>
+                        </div>
+                        <h4 data-ja="Instagram" data-en="Instagram">Instagram</h4>
+                        <p data-ja="フォローして最新情報をチェック" data-en="Follow us for latest updates">フォローして最新情報をチェック</p>
+                        <a href="https://www.instagram.com/YUI_MASSAGE" target="_blank" class="btn-qr">
+                            <i class="fab fa-instagram"></i>
+                            <span data-ja="Instagramで予約" data-en="Book via Instagram">Instagramで予約</span>
+                        </a>
+                    </div>
+                    
+                    <div class="qr-code-item">
+                        <div class="qr-code">
+                            <div class="qr-code-display line-qr">
+                                <img src="./image/line_qr.jpg" alt="LINE QR Code" class="qr-image">
+                            </div>
+                        </div>
+                        <h4 data-ja="LINE" data-en="LINE">LINE</h4>
+                        <p data-ja="LINEで簡単予約・お問い合わせ" data-en="Easy booking and inquiries via LINE">LINEで簡単予約・お問い合わせ</p>
+                        <a href="#" class="btn-qr" onclick="openLineChat()">
+                            <i class="fab fa-line"></i>
+                            <span data-ja="LINEで予約" data-en="Book via LINE">LINEで予約</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="qr-info">
+                    <p><small data-ja="営業時間：12:00-21:00 | 年中無休（不定休）" data-en="Hours: 12:00-21:00 | Open daily (irregular holidays)">営業時間：12:00-21:00 | 年中無休（不定休）</small></p>
+                    <p><small data-ja="場所：北谷（ゲート1から3分）" data-en="Location: Chatan (3 min from Gate 1)">場所：北谷（ゲート1から3分）</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -338,19 +381,14 @@
                 <div class="footer-contact">
                     <p><i class="fas fa-phone"></i> 070-5537-7858</p>
                     <p><i class="fas fa-clock"></i> 10:00 - 21:00</p>
-                    <p><i class="fas fa-map-marker-alt"></i> <span data-ja="沖縄県北谷町砂辺" data-en="Chatan, Sunabe, Okinawa">沖縄県北谷町砂辺</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=沖縄県中頭郡北谷町浜川２１８ー２　クレリア砂辺２０１" target="_blank" class="map-link"><span data-ja="沖縄県北谷町砂辺" data-en="Okinawa Prefecture, Nakagami District, Chatan Town, Hamakawa 218-2, Cleria Sunabe 201">沖縄県中頭郡北谷町浜川２１８ー２　クレリア砂辺２０１</span></a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 YUI massage. <span data-ja="All rights reserved." data-en="All rights reserved.">All rights reserved.</span></p>
+                <p>&copy; 2025 YUI massage. <span data-ja="All rights reserved." data-en="All rights reserved.">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
-
-    <!-- Chat Widget Placeholder -->
-    <div id="chat-widget">
-        <!-- Your n8n chat widget will be inserted here -->
-    </div>
 
     <script src="script.js"></script>
 </body>

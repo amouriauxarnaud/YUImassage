@@ -42,14 +42,14 @@ p {
 .kanji {
     font-family: 'Noto Sans JP', serif;
     font-size: 1.2em;
-    color: #8B7355;
+    color: #E8B4B8;
     margin-left: 8px;
 }
 
 .kanji-large {
     font-family: 'Noto Sans JP', serif;
     font-size: 0.8em;
-    color: #8B7355;
+    color: #E8B4B8;
     margin-left: 12px;
 }
 
@@ -68,36 +68,36 @@ p {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #8B7355 0%, #A0916B 100%);
+    background: linear-gradient(135deg, #E8B4B8 0%, #F4C2C7 100%);
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.3);
+    box-shadow: 0 8px 25px rgba(232, 180, 184, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #8B7355;
-    border: 2px solid #8B7355;
+    color: #E8B4B8;
+    border: 2px solid #E8B4B8;
 }
 
 .btn-secondary:hover {
-    background: #8B7355;
+    background: #E8B4B8;
     color: white;
 }
 
 .btn-service {
     background: #f8f9fa;
-    color: #8B7355;
+    color: #E8B4B8;
     border: 1px solid #e9ecef;
     width: 100%;
     margin-top: 1rem;
 }
 
 .btn-service:hover {
-    background: #8B7355;
+    background: #E8B4B8;
     color: white;
 }
 
@@ -114,7 +114,7 @@ p {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid rgba(139, 115, 85, 0.1);
+    border-bottom: 1px solid rgba(232, 180, 184, 0.1);
 }
 
 .nav-container {
@@ -148,10 +148,10 @@ p {
 
 .language-toggle {
     background: transparent;
-    border: 2px solid #8B7355;
+    border: 2px solid #E8B4B8;
     border-radius: 6px;
     padding: 8px 12px;
-    color: #8B7355;
+    color: #E8B4B8;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -162,7 +162,7 @@ p {
 }
 
 .language-toggle:hover {
-    background: #8B7355;
+    background: #E8B4B8;
     color: white;
 }
 
@@ -183,7 +183,7 @@ p {
 }
 
 .nav-link:hover {
-    color: #8B7355;
+    color: #E8B4B8;
 }
 
 .hamburger {
@@ -206,36 +206,63 @@ p {
     display: flex;
     align-items: center;
     padding: 100px 20px 50px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./image/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 100%;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
-    color: #333;
+    font-size: 3.5rem;
+    color: white;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .slogan {
-    font-size: 1.25rem;
-    color: #8B7355;
+    font-size: 1.5rem;
+    color: white;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero-description {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1.2rem;
+    color: white;
     margin-bottom: 2rem;
     line-height: 1.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero-buttons {
@@ -244,13 +271,7 @@ p {
     flex-wrap: wrap;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Quick Info Bar */
 .quick-info {
@@ -273,7 +294,7 @@ p {
 
 .info-item i {
     font-size: 1.5rem;
-    color: #8B7355;
+    color: #E8B4B8;
     width: 40px;
     text-align: center;
 }
@@ -373,7 +394,7 @@ p {
 
 .price {
     font-weight: 600;
-    color: #8B7355;
+    color: #E8B4B8;
     font-size: 1.1rem;
 }
 
@@ -418,7 +439,7 @@ p {
 
 .credential-item i {
     font-size: 1.5rem;
-    color: #8B7355;
+    color: #E8B4B8;
     width: 40px;
 }
 
@@ -466,7 +487,7 @@ p {
 
 .policy-card i {
     font-size: 2rem;
-    color: #8B7355;
+    color: #E8B4B8;
     margin-bottom: 1rem;
 }
 
@@ -511,7 +532,7 @@ p {
 
 .contact-card i {
     font-size: 1.5rem;
-    color: #8B7355;
+    color: #E8B4B8;
     margin-top: 0.25rem;
 }
 
@@ -526,7 +547,7 @@ p {
 }
 
 .contact-card a {
-    color: #8B7355;
+    color: #E8B4B8;
     text-decoration: none;
     font-weight: 500;
 }
@@ -592,7 +613,7 @@ p {
 }
 
 .footer-contact i {
-    color: #8B7355;
+    color: #E8B4B8;
     width: 16px;
 }
 
@@ -720,5 +741,267 @@ p {
     
     .services, .about, .policies, .contact {
         padding: 3rem 0;
+    }
+}
+
+/* QR Code Section Styles */
+.qr-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+    margin-top: 2rem;
+}
+
+.qr-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.qr-content h3 {
+    color: #E8B4B8;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.qr-content > p {
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.qr-codes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.qr-code-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(232, 180, 184, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(232, 180, 184, 0.1);
+}
+
+.qr-code-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(232, 180, 184, 0.15);
+}
+
+.qr-code {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code-display {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #e9ecef;
+    border-radius: 12px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.qr-code-display:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.qr-pattern {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+}
+
+.qr-finder {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border: 2px solid #000;
+}
+
+.qr-finder.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.qr-finder.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.qr-finder.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.qr-finder::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background: white;
+}
+
+.qr-finder::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    background: #000;
+}
+
+.qr-center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.map-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: #E8B4B8;
+    text-decoration: underline;
+}
+
+.instagram-qr .qr-center-icon {
+    color: #E4405F;
+}
+
+.line-qr .qr-center-icon {
+    color: #00B900;
+}
+
+.qr-code-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.qr-code-item p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.btn-qr {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-qr:hover {
+    transform: translateY(-2px);
+}
+
+.btn-qr i {
+    font-size: 1.1rem;
+}
+
+/* Instagram button */
+.qr-code-item:first-child .btn-qr {
+    background: linear-gradient(135deg, #E4405F 0%, #C13584 100%);
+    color: white;
+}
+
+.qr-code-item:first-child .btn-qr:hover {
+    box-shadow: 0 8px 25px rgba(228, 64, 95, 0.3);
+}
+
+/* LINE button */
+.qr-code-item:last-child .btn-qr {
+    background: linear-gradient(135deg, #00B900 0%, #00A000 100%);
+    color: white;
+}
+
+.qr-code-item:last-child .btn-qr:hover {
+    box-shadow: 0 8px 25px rgba(0, 185, 0, 0.3);
+}
+
+.qr-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(232, 180, 184, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.qr-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.qr-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile Responsiveness for QR Section */
+@media (max-width: 768px) {
+    .qr-section {
+        padding: 3rem 0;
+    }
+    
+    .qr-codes {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .qr-code-item {
+        padding: 1.5rem;
+    }
+    
+    .qr-code-display {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .qr-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .qr-section {
+        padding: 2rem 0;
+    }
+    
+    .qr-code-item {
+        padding: 1rem;
+    }
+    
+    .qr-code-display {
+        width: 100px;
+        height: 100px;
     }
 }

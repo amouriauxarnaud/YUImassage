@@ -134,22 +134,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Chat widget function (placeholder for n8n integration)
+// QR Code and Social Media Functions
 function openChat() {
-    // This function will be used to open your n8n chat widget
-    // You can replace this with your actual chat widget implementation
-    console.log('Opening chat widget...');
+    // Scroll to QR code section instead of opening chat
+    const qrSection = document.getElementById('qr-section');
+    if (qrSection) {
+        qrSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// LINE chat function
+function openLineChat() {
+    // You can customize this to open LINE app or specific LINE contact
+    // For now, it will show a message about LINE contact
+    const lineMessage = document.documentElement.lang === 'ja' 
+        ? 'LINEでお気軽にお問い合わせください。\n\nLINE ID: YUI_MASSAGE\nまたは\nQRコードをスキャンしてください。'
+        : 'Please contact us via LINE.\n\nLINE ID: YUI_MASSAGE\nor\nScan the QR code.';
     
-    // Placeholder alert - remove this when you integrate your n8n chat
-    alert('Chat widget will be integrated here with your n8n webhook URL. Please replace the openChat() function in script.js with your actual chat widget code.');
-    
-    // Example of how you might integrate your chat widget:
-    // if (window.yourChatWidget) {
-    //     window.yourChatWidget.open();
-    // } else {
-    //     // Initialize and open chat widget
-    //     // Your n8n chat widget initialization code here
-    // }
+    alert(lineMessage);
 }
 
 // Utility function to format phone numbers
@@ -193,9 +195,8 @@ function scrollToTop() {
     });
 }
 
-// Add scroll to top button (optional)
+// Create scroll to top button
 document.addEventListener('DOMContentLoaded', function() {
-    // Create scroll to top button
     const scrollButton = document.createElement('button');
     scrollButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
     scrollButton.className = 'scroll-to-top';

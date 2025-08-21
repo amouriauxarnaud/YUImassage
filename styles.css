@@ -1147,17 +1147,77 @@ p {
 
 /* Mobile responsiveness for info frames */
 @media (max-width: 768px) {
+    .wide-container {
+        padding: 0 20px;
+    }
+    
     .info-frames {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0 1rem;
+        gap: 2rem;
+        max-width: 100%;
     }
     
     .info-frame {
         padding: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .info-frame.left-frame {
+        max-width: 100%;
+        justify-self: center;
+    }
+    
+    .info-frame.right-frame {
+        max-width: 100%;
+        justify-self: center;
+    }
+    
+    .info-frame ul {
+        grid-template-columns: 1fr;
+        gap: 0;
+        column-gap: 0;
+    }
+    
+    .info-frame li {
+        padding: 0.75rem 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
     
     .important-info .section-header h2 {
         font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .info-frame .intro-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wide-container {
+        padding: 0 15px;
+    }
+    
+    .info-frame {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    
+    .info-frame li {
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .important-info .section-header h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .info-frame .intro-text {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
     }
 }

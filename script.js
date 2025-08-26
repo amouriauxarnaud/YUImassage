@@ -10,7 +10,7 @@ function toggleLanguage() {
 function updateLanguageDisplay() {
     const indicator = document.getElementById('lang-indicator');
     if (indicator) {
-        indicator.textContent = currentLang === 'ja' ? 'JA' : 'EN';
+        indicator.textContent = currentLang === 'ja' ? 'EN' : 'JP';
     }
 }
 

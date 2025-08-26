@@ -5,6 +5,28 @@
     box-sizing: border-box;
 }
 
+/* Force line breaks to work properly */
+br {
+    display: block;
+    content: "";
+    margin-top: 0.25rem;
+}
+
+/* Address container styling */
+.address-container {
+    margin-bottom: 0.5rem;
+}
+
+.address-line1, .address-line2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.address-line2 {
+    margin-top: 0.25rem;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -830,6 +852,13 @@ p {
     
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .service-card {
+        margin: 0;
+        width: 100%;
     }
     
     .info-grid {
@@ -849,14 +878,32 @@ p {
     /* Mobile text alignment for content sections */
     .service-content {
         text-align: left;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     .service-content h3 {
         text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+        hyphens: auto;
+        width: 100%;
+        margin-bottom: 1rem;
     }
     
     .service-content p {
         text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+    
+    .pricing, .service-notes, .btn-container {
+        width: 100%;
+        align-self: flex-start;
     }
     
     .about-text {
@@ -881,6 +928,25 @@ p {
     
     .contact-info {
         grid-template-columns: 1fr;
+    }
+    
+    /* Mobile break for address */
+    .mobile-break {
+        display: block;
+        margin-top: 0.25rem;
+    }
+    
+    /* Force line break for address in info items */
+    .info-item p {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .info-item p br {
+        display: block;
+        content: "";
+        margin-top: 0.25rem;
     }
 }
 
@@ -927,6 +993,65 @@ p {
     
     .service-card {
         margin: 0 10px;
+    }
+    
+    .service-content {
+        padding: 0.8rem;
+        align-items: flex-start;
+    }
+    
+    .service-content h3 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .service-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .pricing, .service-notes, .btn-container {
+        width: 100%;
+        align-self: flex-start;
+    }
+    
+    /* Mobile break for address */
+    .mobile-break {
+        display: block;
+        margin-top: 0.25rem;
+    }
+    
+    /* Force line break for address in info items */
+    .info-item p {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .info-item p br {
+        display: block;
+        content: "";
+        margin-top: 0.25rem;
+    }
+    
+    /* Mobile address styling */
+    .address-container {
+        margin-bottom: 0.5rem;
+    }
+    
+    .address-line1, .address-line2 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.3;
+        font-size: 0.9rem;
+    }
+    
+    .address-line2 {
+        margin-top: 0.25rem;
     }
     
     .services, .about, .policies, .contact {

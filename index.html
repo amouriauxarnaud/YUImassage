@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUI Massage - 結 | 筋膜リリースの新感覚</title>
-    <meta name="description" content="YUI massageは18年の高級スパ経験を持つ健康と美容の専門サロンです。沖縄県北谷町砂辺にございます。">
+    
+    <!-- Favicon avec le caractère 結 -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='70' font-family='serif' fill='%23E8B4B8'>結</text></svg>">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='70' font-family='serif' fill='%23E8B4B8'>結</text></svg>">
+    
+    <meta name="description" content="YUI massageは18年の高級スパ経験を持つ健康と美容の専門サロンです。沖縄県北谷町浜川２１８ー２　クレリア砂辺２０１にございます。">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -39,14 +44,30 @@
         </div>
     </nav>
 
+    <!-- Hot Pepper Beauty Banner -->
+    <div class="hotpepper-banner">
+        <div class="banner-content">
+            <div class="banner-brand">
+                <img src="https://beauty.hotpepper.jp/images/common/logo_hotpepper_beauty.png" alt="Hot Pepper Beauty" class="hotpepper-logo">
+                <div class="banner-text">
+                    <span data-ja="HOT PEPPER Beautyでオンライン予約" data-en="Online Booking on HOT PEPPER Beauty">HOT PEPPER Beautyでオンライン予約</span>
+                    <small data-ja="空席確認・予約受付中" data-en="Check availability & book now">空席確認・予約受付中</small>
+                </div>
+            </div>
+            <a href="https://beauty.hotpepper.jp/kr/slnH000761912/?fbclid=PAb21jcAMpLaZleHRuA2FlbQIxMQABp1b6wzkgXP-2ayKquk0w8ULcGnDM9jWTGYWrB6lo95R3jTUuyGbBtMhYE55B_aem_NnKGFyn5wOwV2nYUhGdmfw" target="_blank" class="banner-link" data-ja="今すぐ予約" data-en="Book Now">
+                <i class="fas fa-external-link-alt"></i>
+                <span data-ja="今すぐ予約" data-en="Book Now">今すぐ予約</span>
+            </a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background"></div>
         <div class="hero-content">
             <div class="hero-text">
                 <h1>YUI Massage <span class="kanji-large">結</span></h1>
-                <p class="slogan" data-ja="新感覚の筋膜リリース" data-en="A new sensation provide rapid myofascial release.">新感覚の筋膜リリース</p>
-                <p class="hero-description" data-ja="熟練の技術と心からのホスピタリティで、あなたに最高の癒しを提供します。" data-en="With skilled techniques and heartfelt hospitality, we offer you the ultimate relaxation.">熟練の技術と心からのホスピタリティで、あなたに最高の癒しを提供します。</p>
+                <p class="hero-description" data-ja="熟練の技と洗練されたおもてなしで、至福のひとときをご堪能ください。" data-en="Indulge in a blissful moment with our masterful skills and refined hospitality.">熟練の技と洗練されたおもてなしで、至福のひとときをご堪能ください。</p>
                 <div class="hero-buttons">
                     <button class="btn-primary" onclick="document.getElementById('qr-section').scrollIntoView({behavior: 'smooth'})" data-ja="今すぐ予約" data-en="Book Now">今すぐ予約</button>
                     <a href="#services" class="btn-secondary" data-ja="サービスを見る" data-en="View Services">サービスを見る</a>
@@ -72,6 +93,7 @@
                     <div>
                         <h4 data-ja="ご予約" data-en="Reservations">ご予約</h4>
                         <p data-ja="070-5537-7858" data-en="070-5537-7858">070-5537-7858</p>
+                        <p><a href="mailto:contact@yuimassage.com" data-ja="contact@yuimassage.com" data-en="contact@yuimassage.com">contact@yuimassage.com</a></p>
                     </div>
                 </div>
                 <div class="info-item">
@@ -79,8 +101,10 @@
                     <div>
                         <h4 data-ja="所在地" data-en="Location">所在地</h4>
                         <div class="address-container">
-                            <p class="address-line1">沖縄県中頭郡北谷町浜川２１８ー２</p>
-                            <p class="address-line2">クレリア砂辺２０１</p>
+                            <div class="address-grid">
+                                <div class="address-item">沖縄県中頭郡北谷町浜川２１８ー２</div>
+                                <div class="address-item">クレリア砂辺２０１</div>
+                            </div>
                         </div>
                         <p><a href="https://maps.google.com/?q=沖縄県中頭郡北谷町浜川２１８ー２　クレリア砂辺２０１" target="_blank" class="map-link" data-ja="Googleマップで見る" data-en="View on Google Maps">Googleマップで見る</a></p>
                     </div>
@@ -128,7 +152,7 @@
                             <div class="areas-list">
                                 <span class="area-item" data-ja="①首肩" data-en="①Neck & Shoulders">①首肩</span>
                                 <span class="area-item" data-ja="②背中～お尻" data-en="②Back ~ Hips">②背中～お尻</span>
-                                <span class="area-item" data-ja="③脚（前面・背面）" data-en="③Legs (Front & Back)">③脚（前面・背面）</span>
+                                <span class="area-item" data-ja="③脚" data-en="③Legs">③脚</span>
                                 <span class="area-item" data-ja="④腕" data-en="④Arms">④腕</span>
                                 <span class="area-item" data-ja="⑤お腹" data-en="⑤Abdomen">⑤お腹</span>
                                 <span class="area-item" data-ja="⑥デコルテ" data-en="⑥Décolleté">⑥デコルテ</span>
@@ -202,6 +226,54 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Service D - Couple Massage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./image/couple_massage.jpg" alt="カップルマッサージ">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-ja="カップルマッサージ" data-en="Couple Massage">カップルマッサージ</h3>
+                        <p data-ja="心地よい香りと落ち着いた空間で日々の疲れをリセットしながら２人だけの特別な時間をお過ごしください。お部屋のタイプによりご案内できるメニューが異なります。" data-en="Enjoy a special time for just the two of you while resetting daily fatigue in a pleasant fragrance and calm space. The menu we can offer varies depending on the room type.">心地よい香りと落ち着いた空間で日々の疲れをリセットしながら２人だけの特別な時間をお過ごしください。お部屋のタイプによりご案内できるメニューが異なります。</p>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="duration" data-ja="120分（2名様料金）" data-en="120 min (for 2 people)">120分（2名様料金）</span>
+                                <span class="price">¥30,000～</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="duration" data-ja="90分（2名様料金）" data-en="90 min (for 2 people)">90分（2名様料金）</span>
+                                <span class="price">¥24,000～</span>
+                            </div>
+                        </div>
+                        <div class="service-notes">
+                            <p><small data-ja="週末限定のご案内になりますので、ご希望の方は1度お問い合わせください。" data-en="This is a weekend-only service, so please contact us if you are interested.">週末限定のご案内になりますので、ご希望の方は1度お問い合わせください。</small></p>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn-service" onclick="document.getElementById('qr-section').scrollIntoView({behavior: 'smooth'})" data-ja="トリートメント予約" data-en="Book Treatment">トリートメント予約</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service E - Head Massage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./image/head_massage.jpg" alt="ヘッドマッサージ">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-ja="ヘッドマッサージ" data-en="Head Massage">ヘッドマッサージ</h3>
+                        <p data-ja="水素吸入で身体に溜まった活性酸素をケアし、かっさで巡りを整えて老廃物を流します。心身を軽くし、心地よい深い眠りへと導きます。" data-en="Care for accumulated active oxygen in the body with hydrogen inhalation, and use gua sha to improve circulation and flush out waste products. Lightens body and mind, leading to pleasant deep sleep.">水素吸入で身体に溜まった活性酸素をケアし、かっさで巡りを整えて老廃物を流します。心身を軽くし、心地よい深い眠りへと導きます。</p>
+                        <div class="pricing">
+                            <div class="price-item">
+                                <span class="duration" data-ja="60分" data-en="60 min">60分</span>
+                                <span class="price">¥8,000</span>
+                            </div>
+                        </div>
+
+                        <div class="btn-container">
+                            <button class="btn-service" onclick="document.getElementById('qr-section').scrollIntoView({behavior: 'smooth'})" data-ja="トリートメント予約" data-en="Book Treatment">トリートメント予約</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -228,27 +300,38 @@
 
 このサロンが、そんな"つながり"を感じられる<br>
 あたたかい場所になりますように。</p>
-                        <div class="credentials">
-                            <div class="credential-item">
-                                <i class="fas fa-award"></i>
-                                <div>
-                                    <h4 data-ja="国家資格保持者" data-en="Nationally Certified">国家資格保持者</h4>
+                        <div class="owner-description">
+                            <div class="owner-frame">
+                                <h4 data-ja="セラピスト紹介" data-en="About Your Therapist">セラピスト紹介</h4>
+                                <p data-ja="初めまして！兵庫県出身、沖縄移住7年目を迎えました田中　友紀子です。
 
-                                </div>
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-spa"></i>
-                                <div>
-                                    <h4 data-ja="セラピスト歴18年" data-en="18 Years Experience">セラピスト歴18年</h4>
-                                    <p data-ja="元高級ラグジュアリースパセラピスト" data-en="Former luxury spa therapist.">元高級ラグジュアリースパセラピスト</p>
-                                </div>
-                            </div>
-                            <div class="credential-item">
-                                <i class="fas fa-heart"></i>
-                                <div>
-                                    <h4 data-ja="健康と美容に特化" data-en="Health & Beauty Focus">健康と美容に特化</h4>
-                                    <p data-ja="専門的なウェルネストリートメント" data-en="Specialized wellness treatments">専門的なウェルネストリートメント</p>
-                                </div>
+現在セラピスト歴18年。
+整骨院勤務後は
+大阪、沖縄の某ラグジュアリースパセラピストとして沢山のお客様を施術させて頂きました。
+
+エネルギーに満ち溢れた沖縄で自分自身も癒されながら
+沢山のご縁に感謝し、
+これからもお客様の健康と美容に寄り添えるセラピストを目指してまいります。" data-en="Hello! I'm Tanaka Yukiko, originally from Hyogo Prefecture, now in my 7th year living in Okinawa.
+
+After graduating from the Health Science Department of Nippon Sport Science University,
+I enrolled in the Judo Therapy Department at Kansai Medical Academy
+and obtained the national qualification of Judo Therapist.
+
+While being healed myself in energy-filled Okinawa,
+I am grateful for all the connections I've made,
+and I will continue to strive to be a therapist who can support your health and beauty.">初めまして！兵庫県出身、沖縄移住7年目を迎えました田中　友紀子です。
+
+日本体育大学体育学部健康学科卒業後、
+関西医療学園専門学校　柔道整復師学科に入学し
+国家資格である柔道整復師資格を取得。
+
+現在セラピスト歴18年。
+整骨院勤務後は
+大阪、沖縄の某ラグジュアリースパセラピストとして沢山のお客様を施術させて頂きました。
+
+エネルギーに満ち溢れた沖縄で自分自身も癒されながら
+沢山のご縁に感謝し、
+これからもお客様の健康と美容に寄り添えるセラピストを目指してまいります。</p>
                             </div>
                         </div>
                     </div>
@@ -350,8 +433,9 @@
                     <div class="contact-card">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4 data-ja="電話番号" data-en="Phone">電話番号</h4>
+                            <h4 data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h4>
                             <p><a href="tel:070-5537-7858" data-ja="070-5537-7858" data-en="070-5537-7858">070-5537-7858</a></p>
+                            <p><a href="mailto:contact@yuimassage.com" data-ja="contact@yuimassage.com" data-en="contact@yuimassage.com">contact@yuimassage.com</a></p>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -456,6 +540,7 @@
                 </div>
                 <div class="footer-contact">
                     <p><i class="fas fa-phone"></i> <span data-ja="070-5537-7858" data-en="070-5537-7858">070-5537-7858</span></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@yuimassage.com" data-ja="contact@yuimassage.com" data-en="contact@yuimassage.com">contact@yuimassage.com</a></p>
                     <p><i class="fas fa-clock"></i> <span data-ja="10:00 - 19:00" data-en="10:00 AM - 7:00 PM">10:00 - 19:00</span></p>
                     <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=沖縄県中頭郡北谷町浜川２１８ー２　クレリア砂辺２０１" target="_blank" class="map-link">
                         <span class="address-line1">沖縄県中頭郡北谷町浜川２１８ー２</span><br>
